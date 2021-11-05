@@ -42,7 +42,8 @@ function AuthProvider({ children }: AuthProviderProps) {
   const [isSigningIn, setIsSigningIn] = useState(true);
   const [user, setUser] = useState<User | null>(null);
 
-  const CLIENT_ID = 'a56ad0731291a0eb5372'
+  // get cliend id from github developer settings
+  const CLIENT_ID = ''
   const SCOPE = 'read:user'
   const USER_STORAGE = '@nlwheat:user';
   const TOKEN_STORAGE = '@nlwheat:token';
